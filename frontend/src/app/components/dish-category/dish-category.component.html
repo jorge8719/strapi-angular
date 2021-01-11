@@ -1,0 +1,12 @@
+<div class="app-dish-category" [ngClass]="{'is-active' : isOpen}">
+  <div class="app-dish-category__inner">
+      <div class="app-dish-category__header" (click)="toggle();">
+        <div class="app-dish-category__title">
+          {{ title | uppercase }}
+        </div>
+      </div>
+      <div class="app-dish-category__body" [hidden]="!isOpen">
+        <ng-content></ng-content>
+      </div>
+  </div>
+</div>

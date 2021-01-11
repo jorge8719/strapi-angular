@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dishes-categories",
+      "handler": "dishes-categories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dishes-categories/count",
+      "handler": "dishes-categories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dishes-categories/:id",
+      "handler": "dishes-categories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dishes-categories",
+      "handler": "dishes-categories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dishes-categories/:id",
+      "handler": "dishes-categories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dishes-categories/:id",
+      "handler": "dishes-categories.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+.app-header {
+  box-shadow: 0 0 3px 0 #000;
+  background-color: #fff;
+  &__inner {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    padding: 16px;
+  }
+
+  &__logo {
+  }
+
+  &__nav {
+    &-link {
+      text-decoration: none;
+      color: #333;
+      &.is-active {
+        text-decoration: underline;
+      }
+    }
+  }
+}

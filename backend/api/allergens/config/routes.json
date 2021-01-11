@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/allergens",
+      "handler": "allergens.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/allergens/count",
+      "handler": "allergens.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/allergens/:id",
+      "handler": "allergens.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/allergens",
+      "handler": "allergens.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/allergens/:id",
+      "handler": "allergens.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/allergens/:id",
+      "handler": "allergens.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+.app-dish {
+
+  &__inner {
+    grid-template-columns: 1fr auto;
+    display: grid;
+    align-items: center;
+  }
+  &__name {
+    margin: 0;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: capitalize;
+  }
+  &__description {
+    grid-column: 1/-1;
+  }
+
+  &__price {
+    font-size: 18px;
+  }
+
+  &__allergens {
+    &-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      color: #666;
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+<div class="app-dish">
+  <div class="app-dish__inner">
+    <h3 class="app-dish__name">
+      {{ name }}
+    </h3>
+    <a [routerLink]="['/menu/', name, id]">mas</a>
+    <div *ngIf="price" class="app-dish__price">
+      {{ price }} €
+    </div>
+    <p class="app-dish__description">
+      {{ description }}
+    </p>
+    <div class="app-dish__allergens" *ngIf="allergens.length > 0">
+      <div class="app-dish__allergens-title">Listado alérgenos</div>
+      <app-dish-allergens
+      *ngFor="let item of allergens;"
+      [media]="item.media.url"
+      ></app-dish-allergens>
+    </div>
+
+  </div>
+</div>
