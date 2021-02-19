@@ -11,8 +11,15 @@ const routes: Routes = [
   {
     path: 'menu/:name/:id',
     component: DishDetailComponent
+  },
+  {
+    path: 'categories',
+    loadChildren: () => import('./feature/categories-list/categories-list.module').then(m => m.CategoriesListModule)
   }
 ];
+
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

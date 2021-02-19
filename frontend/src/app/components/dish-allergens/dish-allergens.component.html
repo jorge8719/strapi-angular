@@ -1,6 +1,6 @@
-<div class="app-allergen">
-  <div class="app-allergen__name" *ngIf="name">
-    {{ name }}
+<div class="app-allergen" *ngFor="let item of data;">
+  <div class="app-allergen__name" *ngIf="item.nombre">
+    {{ item.nombre }}
   </div>
-  <img class="app-allergen__media" [src]="'http://localhost:1337' + media">
+  <img class="app-allergen__media" [src]="'http://localhost:1337' + item.media.url">
 </div>

@@ -13,6 +13,9 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "dishes": {
+      "collection": "dishes"
     }
   }
 }

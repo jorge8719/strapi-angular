@@ -3,11 +3,7 @@
       <app-dish-category *ngFor="let item of sortDishes | keyvalue" [title]="item.key">
         <app-dish
         *ngFor="let dish of item.value"
-        [name]="dish.name"
-        [price]="dish.price"
-        [description]="dish.description"
-        [allergens]="dish.allergens"
-        [id]="dish.id"
+        [data]="dish"
         ></app-dish>
       </app-dish-category>
   </div>

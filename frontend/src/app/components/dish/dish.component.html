@@ -1,20 +1,19 @@
 <div class="app-dish">
   <div class="app-dish__inner">
-    <h3 class="app-dish__name">
-      {{ name }}
+    <h3 class="app-dish__name" *ngIf="data.name">
+      {{ data.name }}
     </h3>
-    <a [routerLink]="['/menu/', name, id]">mas</a>
-    <div *ngIf="price" class="app-dish__price">
-      {{ price }} €
+    <a [routerLink]="['/menu/', data.name, data.id]">mas</a>
+    <div *ngIf="data.price" class="app-dish__price">
+      {{ data.price }} €
     </div>
     <p class="app-dish__description">
-      {{ description }}
+      {{ data.description }}
     </p>
-    <div class="app-dish__allergens" *ngIf="allergens.length > 0">
+    <div class="app-dish__allergens" *ngIf="data.allergens.length > 0">
       <div class="app-dish__allergens-title">Listado alérgenos</div>
       <app-dish-allergens
-      *ngFor="let item of allergens;"
-      [media]="item.media.url"
+      [data]="data.allergens"
       ></app-dish-allergens>
     </div>
 

@@ -9,7 +9,7 @@ import { DishCategoryComponent } from './components/dish-category/dish-category.
 import { DishAllergensComponent } from './components/dish-allergens/dish-allergens.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { DishDetailComponent } from './components/dish-detail/dish-detail.component';
-import { DemoDirective } from './directives/demo.directive';
+
 
 
 @NgModule({
@@ -20,8 +20,7 @@ import { DemoDirective } from './directives/demo.directive';
     DishCategoryComponent,
     DishAllergensComponent,
     DishDetailComponent,
-    HeaderComponent,
-    DemoDirective
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
